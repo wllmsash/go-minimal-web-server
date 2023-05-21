@@ -1,0 +1,16 @@
+{
+  "name": "go-minimal-web-server-devcontainer",
+  "image": "go-minimal-web-server-devcontainer:latest",
+  "runArgs": [
+    "--publish=8080:8080",
+    "--add-host=host.docker.internal:host-gateway"
+  ],
+  "updateRemoteUserUID": false,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  }
+}
